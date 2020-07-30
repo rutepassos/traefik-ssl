@@ -44,7 +44,7 @@ brew install mkcert
 
 git clone https://github.com/rutepassos/traefik-ssl
 
-cd traefik-ssl-localhost
+cd traefik-ssl
 
 mkdir certs
 
