@@ -12,9 +12,9 @@ NOTE: In the file traefik.yml, a local network was created with a fixed ip for e
 
 ## Dependencies
 
+- Operational system Ubuntu
 - mkcert
 - git
-- SO Ubuntu
 - Homebrew
 
 ### Install git on Ubuntu
