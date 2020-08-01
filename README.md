@@ -13,10 +13,10 @@ NOTE: In the file traefik.yml, a local network was created with a fixed ip for e
 ## Dependencies
 
 - Operational system Ubuntu
-- mkcert
 - git
-- Homebrew
 - libnss3-tools
+- Homebrew
+- mkcert
 
 ### Installs
 
