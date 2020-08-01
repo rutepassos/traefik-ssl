@@ -16,11 +16,13 @@ NOTE: In the file traefik.yml, a local network was created with a fixed ip for e
 - mkcert
 - git
 - Homebrew
+- libnss3-tools
 
-### Install git on Ubuntu
+### Installs
 
 ```
 sudo apt install git
+sudo apt install libnss3-tools
 
 ```
 
