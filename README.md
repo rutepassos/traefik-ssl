@@ -22,19 +22,21 @@ NOTE: In the file traefik.yml, a local network was created with a fixed ip for e
 
 ```
 sudo apt install git
+
 sudo apt install libnss3-tools
 
-```
-
-### Install mkcert on Ubuntu
-
-If your system operating is differently, please see [mkcert](https://github.com/FiloSottile/mkcert)
-
-```
 git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
 mkdir ~/.linuxbrew/bin
 ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
 eval $(~/.linuxbrew/bin/brew shellenv)
+
+```
+
+### Install mkcert
+
+If your system operating is differently, please see [mkcert](https://github.com/FiloSottile/mkcert)
+
+```
 
 brew install mkcert
 
