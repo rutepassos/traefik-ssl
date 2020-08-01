@@ -30,17 +30,10 @@ mkdir ~/.linuxbrew/bin
 ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
 eval $(~/.linuxbrew/bin/brew shellenv)
 
+brew install mkcert
 ```
-
-### Install mkcert
 
 If your system operating is differently, please see [mkcert](https://github.com/FiloSottile/mkcert)
-
-```
-
-brew install mkcert
-
-```
 
 ### Steps for generate certificate and create services
 
