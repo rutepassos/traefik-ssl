@@ -47,6 +47,8 @@ git clone https://github.com/rutepassos/traefik-ssl
 ```
 cd traefik-ssl
 
+mkdir certs
+
 mkcert -cert-file certs/local-traefik-cert.pem -key-file certs/local-traefik-key.pem  "php5.localhost" "*.php5.localhost" "php7.localhost" "*.php7.localhost"
 
 docker-compose -f traefik.yml up -d
@@ -62,6 +64,8 @@ You can now go to your browser the traefik dashboard [http://localhost:8080/dash
 ```
 
 cd traefik-ssl
+
+mkdir certs
 
 mkcert -cert-file certs/local-cert.pem -key-file certs/local-key.pem  "localhost" "*.localhost"
 
