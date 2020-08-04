@@ -53,6 +53,10 @@ docker-compose -f traefik.yml up -d
 
 ```
 
+You can now go to your browser at [https://php5.localhost](https://php5.localhost) and [https://php7.localhost](https://php7.localhost), enjoy!!!.
+
+You can now go to your browser the traefik dashboard [http://localhost:8080/dashboard](http://localhost:8080/dashboard).
+
 ### Steps for create services without traefik
 
 ```
@@ -65,9 +69,7 @@ docker-compose up -d
 
 ```
 
-You can now go to your browser at [https://php5.localhost](https://php5.localhost) and [https://php7.localhost](https://php7.localhost), enjoy!!!.
-
-You can now go to your browser the traefik dashboard [http://localhost:8080/dashboard](http://localhost:8080/dashboard).
+You can now go to your browser the traefik dashboard [https://localhost](https://localhost), enjoy!!!.
 
 Inspired by:
 
