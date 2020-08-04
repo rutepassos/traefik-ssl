@@ -35,26 +35,33 @@ brew install mkcert
 
 If your system operating is differently, please see [mkcert](https://github.com/FiloSottile/mkcert)
 
-### Steps for generate certificate and create services
+### Clone repository
+
+```
+git clone https://github.com/rutepassos/traefik-ssl
 
 ```
 
-git clone https://github.com/rutepassos/traefik-ssl
+### Steps for create services with routing traefik
 
+```
 cd traefik-ssl
 
-mkdir certs
-
-mkcert -cert-file certs/local-cert.pem -key-file certs/local-key.pem "php5.localhost" "*.php5.localhost" "php7.localhost" "*.php7.localhost"
+mkcert -cert-file certs/local-traefik-cert.pem -key-file certs/local-traefik-key.pem  "php5.localhost" "*.php5.localhost" "php7.localhost" "*.php7.localhost"
 
 docker-compose -f traefik.yml up -d
 
-sudo chmod 777 -R php5
-sudo chmod 777 -R php7
+```
 
-echo "<?php phpinfo() ?>" >> php5/www/index.php
+### Steps for create services without traefik
 
-echo "<?php phpinfo() ?>" >> php7/www/index.php
+```
+
+cd traefik-ssl
+
+mkcert -cert-file certs/local-cert.pem -key-file certs/local-key.pem  "localhost" "*.localhost"
+
+docker-compose up -d
 
 ```
 

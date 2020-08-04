@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+  php7:
+    image: anapassos/php7:latest
+    container_name: php7
+    volumes:
+      - ./php7/www:/var/www/html
+      - ./config/ssl/default-ssl.conf:/etc/apache2/sites-available/default-ssl.conf
+      - ./certs/local-cert.pem:/etc/ssl/private/local-cert.pem
+      - ./certs/local-key.pem:/etc/ssl/private/local-key.pem
+    ports:
+      - "8080:80"
+      - "443:443"
+    networks:
+      mynet:
+        ipv4_address: 192.168.220.86
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.220.0/24
