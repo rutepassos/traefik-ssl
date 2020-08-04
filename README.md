@@ -18,7 +18,7 @@ NOTE: In the file traefik.yml, a local network was created with a fixed ip for e
 - Homebrew
 - mkcert
 
-### Install
+### Install mkcert
 
 ```
 sudo apt install git
